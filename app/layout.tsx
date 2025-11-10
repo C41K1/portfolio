@@ -14,8 +14,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Caiki",
-  description: "Portfolio - Caiki",
+  title: "Caiki - Engenheiro de Software",
+  description: "Conheça meus projetos e minha trajetória.",
+  openGraph: {
+    title: 'Caiki - Desenvolvedor de Software',
+    description: 'Conheça meus projetos e minha trajetória.',
+    url: `https://caiki.vercel.app`,
+    siteName: 'Portfólio Caiki',
+    images: [
+      {
+        url: `https://caiki.vercel.app/preview-site.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Preview do site de Caiki',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Caiki - Desenvolvedor de Software',
+    description: 'Conheça meus projetos e minha trajetória.',
+    images: [`https://caiki.vercel.app/preview-site.png`],
+  },
 };
 
 export default function RootLayout({
