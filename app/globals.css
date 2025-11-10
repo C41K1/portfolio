@@ -103,3 +103,15 @@ body {
   height: var(--slide-height);
   user-select: none;
 }
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+label {
+  color: #ffffff;
+}
