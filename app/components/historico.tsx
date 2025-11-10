@@ -16,7 +16,7 @@ export default function Historico({ lang }: { lang: string }) {
                 <Timeline>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            2018 - 2020
+                            <label>2018 - 2020</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
@@ -33,7 +33,7 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            2021
+                            <label>2021</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
@@ -50,7 +50,7 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            2023
+                            <label>2023</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
@@ -67,7 +67,7 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            2024
+                            <label>2024</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
@@ -84,7 +84,7 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            {lang === 'pt-br' ? "Agosto de 2025" : "August 2025"}
+                            <label>{lang === 'pt-br' ? "Agosto de 2025" : "August 2025"}</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
@@ -101,7 +101,7 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            {lang === 'pt-br' ? "Setembro de 2025" : "September 2025"}
+                            <label>{lang === 'pt-br' ? "Setembro de 2025" : "September 2025"}</label>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
