@@ -22,7 +22,7 @@ export default function Navbar({ lang }: { lang: string }) {
                 <button onClick={() => { document.getElementById("contato")?.scrollIntoView({ behavior: "smooth", block: "start" }) }} className="h-full px-4 hover:bg-[#00000055]">{lang === 'pt-br' ? "Contato" : "Contact"}</button>
                 <div className="items-center justify-center group relative flex flex-row p-4 hover:bg-[#00000055]">
                     <Image width={32} height={16} src={lang === "pt-br" ? "/assets/BR.svg" : "/assets/US.svg"} alt={lang === "pt-br" ? "idioma" : "language"} />
-                    ⏷
+                    <Image className="aspect-square invert ml-2" width={12} height={8} src={"/assets/seta.svg"} alt={"descer"} unoptimized />
                     <div className="hidden group-hover:flex flex-col absolute top-full gap-2 px-6 py-2 bg-[#00000055]">
                         <Link href={"/en-us"}>
                             <Image width={32} height={16} src={"/assets/US.svg"} alt={"english"} />
@@ -37,7 +37,7 @@ export default function Navbar({ lang }: { lang: string }) {
                 <Image className="invert" width={24} height={24} src={"/assets/menu.svg"} alt={"menu"} unoptimized />
             </button>
             {
-                menu && <div className="fixed top-0 right-0 w-[90vw] h-screen flex flex-col bg-slate-900 items-end justify-start pt-[2vh] animate-abrir">
+                menu && <div className="fixed top-0 right-0 w-[90vw] h-screen flex flex-col bg-slate-900 items-end justify-start pt-[2vh] animate-abrir overflow-y-auto">
                     <button onClick={() => setMenu(false)} className="w-full flex flex-row justify-between md:hidden p-6 border-b border-slate-500">
                         <label>Menu</label>
                         <Image className="invert -scale-x-100" width={24} height={24} src={"/assets/menu.svg"} alt={"menu"} unoptimized />
@@ -51,7 +51,8 @@ export default function Navbar({ lang }: { lang: string }) {
                     <div className={`items-end justify-center group relative flex flex-row p-4 ${lingua && "bg-[#00000055]"}`}>
                         <button className="flex flex-row" onClick={() => { setLingua(!lingua) }}>
                             <Image width={32} height={16} src={lang === "pt-br" ? "/assets/BR.svg" : "/assets/US.svg"} alt={lang === "pt-br" ? "idioma" : "language"} />
-                            ⏷
+                            <Image className="aspect-square invert ml-2" width={12} height={8} src={"/assets/seta.svg"} alt={"descer"} unoptimized />
+                            
                         </button>
                         <div className={`${lingua ? "flex" : "hidden"} flex-col absolute top-full gap-2 px-6 py-2 bg-[#00000055]`}>
                             <Link href={"/en-us"}>

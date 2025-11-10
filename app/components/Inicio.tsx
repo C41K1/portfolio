@@ -20,7 +20,9 @@ export default function Inicio({ lang }: { lang: string }) {
                     <Image className="w-10 aspect-square" width={512} height={512} src={"/assets/email.svg"} alt={"email"} unoptimized />
                 </Link>
             </div>
-            <button className="w-screen h-[10vh] cursor-pointer text-5xl animate-bounce mt-[10vh] md:mt-[20vh]" onClick={() => { document.getElementById("educacao")?.scrollIntoView({ behavior: "smooth", block: "start" }) }}>⏷</button>
+            <button className="w-screen h-[10vh] cursor-pointer text-5xl animate-bounce mt-[10vh] md:mt-[20vh] flex items-center justify-center" onClick={() => { document.getElementById("educacao")?.scrollIntoView({ behavior: "smooth", block: "start" }) }}>
+                <Image className="w-10 aspect-square invert" width={512} height={512} src={"/assets/seta.svg"} alt={"descer"} unoptimized />
+            </button>
         </div>
     )
 }
