@@ -84,16 +84,33 @@ export default function Historico({ lang }: { lang: string }) {
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            2025
+                            {lang === 'pt-br' ? "Agosto de 2025" : "August 2025"}
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <div className='bg-[#00000055] shadow-md rounded-2xl flex flex-col p-4 mb-16'>
+                                <label className="text-lg font-bold md:text-2xl">{lang === 'pt-br' ? "Ensino Superior Completo" : "Graduation Degree"}</label>
+                                <p className='text-gray-400 mt-2'>
+                                    {lang === 'pt-br' ? "Concluí minha graduação em Engenharia de Software pela Universidade Tecnológica Federal do Paraná (UTFPR). O curso proporcionou um entendimento profundo sobre o ciclo de vida do desenvolvimento de software, desde o levantamento de requisitos até a fase de manutenção." : "I graduated with a degree in Software Engineering from the Federal University of Technology - Paraná (UTFPR). The program provided a deep understanding of the software development life cycle, from requirements gathering to the maintenance phase."}
+                                </p>
+                            </div>
+                        </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent>
+                            {lang === 'pt-br' ? "Setembro de 2025" : "September 2025"}
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
                         </TimelineSeparator>
                         <TimelineContent>
                             <div className='bg-[#00000055] shadow-md rounded-2xl flex flex-col p-4'>
-                                <label className="text-lg font-bold md:text-2xl">{lang === 'pt-br' ? "Ensino Superior Completo" : "Graduation Degree"}</label>
+                                <label className="text-lg font-bold md:text-2xl">{lang === 'pt-br' ? "Pós Graduação" : "Post Graduation Degree"}</label>
                                 <p className='text-gray-400 mt-2'>
-                                    {lang === 'pt-br' ? "Concluí minha graduação em Engenharia de Software pela Universidade Tecnológica Federal do Paraná (UTFPR). O curso proporcionou um entendimento profundo sobre o ciclo de vida do desenvolvimento de software, desde o levantamento de requisitos até a fase de manutenção." : "I graduated with a degree in Software Engineering from the Federal University of Technology - Paraná (UTFPR). The program provided a deep understanding of the software development life cycle, from requirements gathering to the maintenance phase."}
+                                    {lang === 'pt-br' ? "Iniciei minha Pós Graduação em Java na Universidade Tecnológica Federal do Paraná (UTFPR)" : "I started my Post Graduation in Java on University of Technology - Paraná (UTFPR)."}
                                 </p>
                             </div>
                         </TimelineContent>
